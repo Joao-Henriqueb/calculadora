@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+body{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+button{
+    width: 80px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.534);
+}
+#calculadora{
+    display: grid;
+    grid-template-columns:repeat(4,max-content) ;
+    grid-template-rows: repeat(6,max-content);
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+
+}
+#tela{
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.534);
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0.2rem;
+}
+#botao{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end:5;
+
+
+
+}
+#botao >button{
+    background-color: #ddd;
+}
+#calculadora .numero:nth-child(2){
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+
+}
+#calculadora .numero:nth-child(3){
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+#calculadora .numero:nth-child(4){
+    grid-row-start: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+#calculadora .numero:nth-child(5){
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+#calculadora .numero:nth-child(6){
+    grid-row-start: 7;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+}
+#calculadora #igual{
+    grid-row-start: 4;
+    grid-row-end: 8;
+    grid-column-start: 4;
+
+}
+#calculadora #igual> button{
+    height: 100%;
+    background-color: #307CF9;
+    color: white;
+    border: none;
+}
