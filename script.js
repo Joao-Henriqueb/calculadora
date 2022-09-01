@@ -40,7 +40,7 @@ function esperar(){
         console.log(escolhidos1)
     }
 
-    // segundo numeros clicado
+    // segundo numeros escolhidos para operação
     function numerosclicados2(event){
         escolhidos2+=event.target.value
         console.log("escolhidos1: "+escolhidos1)
@@ -88,7 +88,7 @@ function esperar(){
         
     }
 
-    // rsultado
+    // resultado
     function igualdade(){
         escolhidos1=Number(escolhidos1)
         escolhidos2=Number(escolhidos2)
